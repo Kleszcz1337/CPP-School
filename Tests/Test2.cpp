@@ -16,7 +16,7 @@ Funkcja znajduje wartości najmniejszego i największego elementu tablicy
 Przedstaw wywołanie funkcji na tablicy int a[]{2,3,4,2,7,4,7,2};
  */
 
-void minMaxRep(int a[], size_t size, int** mn, size_t*& in, int& mx, size_t* ix);
+void minMaxRep(int a[], size_t size, int* *mn, size_t* &in, int& mx, size_t* ix);
 
 int main() {
 
@@ -48,13 +48,11 @@ int main() {
 
 void minMaxRep(int a[], size_t size, int* *mn, size_t* &in, int& mx, size_t* ix){
 
-    size_t counter = 1;
-
     mx = a[0];
-    *ix = 0;
+    *ix = 1;
 
     *mn = &a[0];
-    *in = 0;
+    *in = 1;
 
     for(size_t i = 1; i < size; i++){
         if(mx == a[i]) //max
