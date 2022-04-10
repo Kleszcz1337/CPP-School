@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 
-bool sumOfTwo(const std::vector<int>& v,
-              int val, int& i, int& j);
+bool sumOfTwo(const std::vector<int>& v, int val, int& i, int& j);
 
 int main(){
     std::vector<int> a{ 2, 4, 5, 8, 9, 11, 13, 15 };
@@ -11,8 +10,7 @@ int main(){
     std::cout << "i= " << i << " j= " << j;
 }
 
-bool sumOfTwo(const std::vector<int>& v,
-              int val, int& i, int& j){
+bool sumOfTwo(const std::vector<int>& v, int val, int& i, int& j){
 
     for (i = 0; i < v.size(); ++i) {
         for (j = i+1; j < v.size(); ++j) {

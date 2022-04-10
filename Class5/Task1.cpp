@@ -1,10 +1,6 @@
 #include <iostream>
 
-unsigned short koduj(int plec, int stan_cyw,
-                     int grupa_wiek, int edu,
-                     int zam, int region,
-                     int odp);
-
+unsigned short koduj(int plec, int stan_cyw, int grupa_wiek, int edu, int zam, int region, int odp);
 void info(unsigned short kod);
 
 int main(){

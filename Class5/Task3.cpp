@@ -11,10 +11,8 @@ int fillWithPrimes(int arr[], size_t sz);
 int fillWithPrimes(std::vector<int>& vec);
 int fillGaps(int arr[], size_t sz);
 int fillGaps(std::vector<int>& vec);
-size_t blockRem(int arr[], size_t sz,
-                size_t from, size_t to);
-size_t blockRem(std::vector<int>& vec,
-                size_t from, size_t to);
+size_t blockRem(int arr[], size_t sz, size_t from, size_t to);
+size_t blockRem(std::vector<int>& vec, size_t from, size_t to);
 int findMin(const int *arr, size_t sz);
 
 int main() {
